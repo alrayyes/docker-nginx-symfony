@@ -1,12 +1,12 @@
-docker image for nginx, php5-fpm and cron
+docker image for nginx, php5-fpm and symfony
 
 Forked from
 mbentley/nginx-php5
 
-- added cron
 - purged unused soft
 - nginx installed from repo
+- modified sites-enabled/default
 
 
-`docker run -p 80 -v /data/logs:/var/log/nginx -v /data/www:/var/www -v /shared/cron.d:/etc/cron.d/ korjavin/docker-nginx-php5`
+`docker run -p 80:80 -v /data/logs:/var/log/nginx -v /data/www:/var/www --link mysql:mysql korjavin/docker-nginx-php5`
 
