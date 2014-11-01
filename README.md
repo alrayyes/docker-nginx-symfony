@@ -1,4 +1,4 @@
-docker image for nginx, php5-fpm and symfony
+docker image for nginx, php5-fpm and symfony 1.4
 
 Forked from
 mbentley/nginx-php5
