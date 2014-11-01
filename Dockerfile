@@ -18,5 +18,6 @@ RUN sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 16M/g' /etc/php5/fp
 
 EXPOSE 80
 VOLUME ["/etc/cron.d/"]
+VOLUME ["/var/www"]
 
 CMD ["/usr/bin/supervisord","-c","/etc/supervisor/supervisord.conf"]
