@@ -1,7 +1,6 @@
-FROM debian:testing
+FROM korjavin/korjavin-base
 
 RUN apt-get update
-
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y dnsutils libssl-dev php5-curl php5-gd php5-fpm php5-mcrypt php5-mysql php5-snmp ssmtp supervisor whois nginx-full cron
 
 RUN mkdir -p /var/lib/nginx /etc/nginx/sites-enabled /etc/nginx/sites-available /var/www
